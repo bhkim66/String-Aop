@@ -1,4 +1,4 @@
-package hello.aop.order.aop.annotation;
+package hello.aop.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

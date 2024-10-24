@@ -1,9 +1,6 @@
 package hello.aop.order;
 
-import hello.aop.order.aop.AspectV1;
-import hello.aop.order.aop.AspectV3;
-import hello.aop.order.aop.AspectV4Pointcut;
-import hello.aop.order.aop.AspectV5Order;
+import hello.aop.order.aop.*;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -21,7 +18,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 //@Import(AspectV2.class)
 //@Import(AspectV3.class)
 //@Import(AspectV4Pointcut.class)
-@Import({AspectV5Order.LogAspect.class, AspectV5Order.LogAspect.class})
+//@Import({AspectV5Order.LogAspect.class, AspectV5Order.LogAspect.class})
+@Import(AspectV6Advice.class)
 class AopTest {
 
 //    private static final Logger log = LoggerFactory.getLogger(AopTest.class);
